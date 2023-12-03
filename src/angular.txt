@@ -1,0 +1,40 @@
+Angular
+
+
+Basic command
+.......................
+
+1. to create project : ng new project-name
+2. to run projet : ng serve
+3. to create new component : ng g c component-name
+
+
+Basic Feature
+...............................
+
+
+1. module : used to hold multiple component and helps import packages to design page Root Module : App module
+2. Component : is apart of UI , consist of HTML,CSS and ts file and ts file and its selector to use it in another page - Root Component : AppComponent
+3. Decoration : to add Meta data (data inside another data), Indicate using @
+4. Selector : to display Component design in another html file
+5: Data Binding : Data sharing within a Component
+        - one way binding : 
+            -component (ts file) to view (html file)
+                - Sting Interpolation : use  {{property-name}} in html page
+                - property Binding : bind class property with html tag attributes - [attributes] = "property"
+            -View (html file) to component (it file)
+                - Event Binding : use (event-name) ="function-call"
+                - Event Binding using $event : use (event-name)="function-name($event)" - to get event file
+                - Templete Reference variable : use # variable-name
+        - Two way Binding : 
+            - Data sharing in both direction at the same time
+            - Templete driven Forms : Form will design in HTML First
+                - use ngModel attributes : syntax -[{ngModel}]=" class property", if it is inside form tag, must set name attribute of that input tag
+            - Model Driven Forms : First create form in ts file
+6: To set up path for component
+        - define router in routing.Module ts file
+         - syntax : {path:'',component:component-name}
+         - use router-outlet selectorin root component
+7: routerLink to redirect form one component to another in tag 
+8: Depentance Injection : 
+    - synstax : constractour(access-specifier component-property:Dependency class name){}

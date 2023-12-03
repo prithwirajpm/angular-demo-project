@@ -1,0 +1,21 @@
+
+<div class="text-center"><h1>Register Form</h1></div>
+<div class="d-flex justify-content-center">
+    
+    <form class="border p-5 m-5 text-center w-50">
+        <div class="mb-3">
+            <input type="text" class="form-control" placeholder="User Name" name="uname"> 
+        </div>
+        <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Email" name="email"> 
+        </div>
+        <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Password" name="psw"> 
+        </div>
+        <div class="mb-3">
+            <input (click)="register()" type="submit" class="btn btn-success" value="Register"> 
+            <span>Already User ? Click here to <a routerLink="">Login</a></span>
+        </div>
+    </form>
+    
+</div>
