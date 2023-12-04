@@ -3,13 +3,13 @@
   
     <form class="border p-5 m-5 text-center w-50">
         <div class="mb-3">
-            <input type="text" class="form-control" placeholder="Email" name="email"> 
+            <input type="text" class="form-control" placeholder="Email" name="email" [(ngModel)]="email"> 
         </div>
         <div class="mb-3">
-            <input type="text" class="form-control" placeholder="Password" name="psw"> 
+            <input type="text" class="form-control" placeholder="Password" name="password" [(ngModel)]="password"> 
         </div>
         <div class="mb-3">
-            <input type="submit" class="btn btn-success" value="Login"> 
+            <input type="submit" (click)="login()" class="btn btn-success" value="Login"> 
             <span>Already User ? Click here to <a routerLink="register">Register</a></span>
         </div>
     </form>

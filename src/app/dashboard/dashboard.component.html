@@ -1,0 +1,26 @@
+<div class="border rounded w-75 m-5">
+    <h1>DasBoard</h1>
+    <h3 *ngIf="email">Email : {{email}}</h3>
+    <h3 *ngIf="password">Password :{{password}} </h3>
+
+</div>
+<div class="container">
+    <h1 class="text-center text-primary mt-5">ALL User</h1>
+    <table class="table mt-5 shadow">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Username</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of userDetails;let i=index;">
+                <td>{{i+1}}</td>
+                <td>{{user.uname}}</td>
+                <td>{{user.age}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>

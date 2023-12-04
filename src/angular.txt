@@ -7,6 +7,7 @@ Basic command
 1. to create project : ng new project-name
 2. to run projet : ng serve
 3. to create new component : ng g c component-name
+4. to create service : ng g service-folder-name/service-name
 
 
 Basic Feature
@@ -36,5 +37,14 @@ Basic Feature
          - syntax : {path:'',component:component-name}
          - use router-outlet selectorin root component
 7: routerLink to redirect form one component to another in tag 
-8: Depentance Injection : 
+8: Depentance Injection : when component and dependant class are dependant then depentent class instance cabn be assigned to other class in their constructure
     - synstax : constractour(access-specifier component-property:Dependency class name){}
+9. Angular Services : usedto define common logic that can access or share by any component
+10. Directives : To provide addition behaviour to html elememt, should stsrt with * symbol,
+    - Component Directives : same as Component Selector which use to view its html in other page
+    - Structural Directives : used to change html structure by adding ? removing html items
+        - *ngIf(condition) attribute: Based on condition to display html element
+        - *ngFor=let variable-name of array-name : render a list
+        - *ngSwitch
+    - Attribute Directives: use to provide style to html elements
+        
